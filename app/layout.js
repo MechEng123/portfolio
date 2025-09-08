@@ -1,3 +1,4 @@
+import "./globals.css";
 
 export const metadata = {
   title: "Hussain Syed | P.Eng., PMP® Portfolio",
@@ -11,3 +12,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
