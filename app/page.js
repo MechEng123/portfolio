@@ -199,8 +199,8 @@ export default function Page() {
           <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
           <p className="mt-2 text-neutral-700">Open to roles across Saudi Arabia: <strong>Project Manager, Process Engineering Consultant, or QA/QC Lead</strong> in building materials & facade manufacturing.</p>
           <div className="mt-6 grid sm:grid-cols-3 gap-4 text-sm">
-            <a href="mailto:youremail@example.com" className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50">youremail@example.com</a>
-            <a href="https://www.linkedin.com/in/your-profile" className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50">LinkedIn</a>
+            <a href="mailto:youremail@example.com" className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50">Syedhussain1675@gmail.com</a>
+            <a href="https://www.linkedin.com/in/your-profile" className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50">https://www.linkedin.com/in/syed-hussain-quadri-/</a>
             <a href="/HussainSyed_PEng_PMP_2025.pdf" className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50">Download Resume (PDF)</a>
           </div>
         </div>
