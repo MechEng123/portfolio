@@ -87,40 +87,103 @@ export default function Page() {
           </div>
         </div>
       </section>
+/* Projects */
+<section id="projects" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+  <h2 className="text-2xl font-semibold tracking-tight">Featured Projects</h2>
 
-      {/* Projects */}
-      <section id="projects" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-        <h2 className="text-2xl font-semibold tracking-tight">Featured Projects</h2>
-        <div className="mt-6 grid md:grid-cols-3 gap-6">
-          <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-            <div className="aspect-[4/3] bg-neutral-100 grid place-content-center text-neutral-400 text-sm">Image placeholder</div>
-            <div className="p-5">
-              <h3 className="font-semibold">Glass Reorder Cost Reduction</h3>
-              <p className="mt-2 text-sm text-neutral-600">
-                Reduced annual glass reorder costs from <strong>$1.2M in 2023</strong> to <strong>$200k in 2024</strong>.
-              </p>
-            </div>
-          </article>
-          <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-            <div className="aspect-[4/3] bg-neutral-100 grid place-content-center text-neutral-400 text-sm">Image placeholder</div>
-            <div className="p-5">
-              <h3 className="font-semibold">Window Production Throughput</h3>
-              <p className="mt-2 text-sm text-neutral-600">
-                Boosted monthly output by addressing bottlenecks and ensuring readiness across sub-departments.
-              </p>
-            </div>
-          </article>
-          <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-            <div className="aspect-[4/3] bg-neutral-100 grid place-content-center text-neutral-400 text-sm">Image placeholder</div>
-            <div className="p-5">
-              <h3 className="font-semibold">Railing Estimation System</h3>
-              <p className="mt-2 text-sm text-neutral-600">
-                Built pricing sheets consolidating material, labor, and process data for precise, fast bids.
-              </p>
-            </div>
-          </article>
+  <div className="mt-6 grid md:grid-cols-3 gap-6">
+    {/* Glass */}
+    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
+      <img
+        src="/projects/thumbnails/GlassReorder-thumb-branded.png"
+        alt="Glass Reorder Case Study preview"
+        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
+      />
+      <div className="p-5">
+        <h3 className="font-semibold">Glass Reorder Cost Reduction</h3>
+        <p className="mt-2 text-sm text-neutral-600">
+          Reduced annual glass reorder costs from <strong>$1.2M in 2023</strong> to <strong>$200k in 2024</strong>.
+        </p>
+        <div className="mt-3 flex items-center gap-4 text-sm">
+          <a href="#case-glass" className="text-neutral-900 hover:underline">Read case study →</a>
+          <a
+            href="/projects/case-studies/GlassReorder.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
+          >
+            {/* Small PDF icon inline */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            PDF
+          </a>
         </div>
-      </section>
+      </div>
+    </article>
+
+    {/* Windows */}
+    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
+      <img
+        src="/projects/thumbnails/WindowProduction-thumb-branded.png"
+        alt="Window Production Throughput case study preview"
+        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
+      />
+      <div className="p-5">
+        <h3 className="font-semibold">Window Production Throughput</h3>
+        <p className="mt-2 text-sm text-neutral-600">
+          Readiness gates removed backlogs and increased output to <strong>11,000/month</strong>.
+        </p>
+        <div className="mt-3 flex items-center gap-4 text-sm">
+          <a href="#case-windows" className="text-neutral-900 hover:underline">Read case study →</a>
+          <a
+            href="/projects/case-studies/WindowProduction.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            PDF
+          </a>
+        </div>
+      </div>
+    </article>
+
+    {/* Railing */}
+    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
+      <img
+        src="/projects/thumbnails/RailingEstimation-thumb-branded.png"
+        alt="Railing Estimation & Pricing case study preview"
+        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
+      />
+      <div className="p-5">
+        <h3 className="font-semibold">Railing Estimation & Pricing</h3>
+        <p className="mt-2 text-sm text-neutral-600">
+          Time studies + material sheets → standardized, accurate, faster quotes.
+        </p>
+        <div className="mt-3 flex items-center gap-4 text-sm">
+          <a href="#case-estimation" className="text-neutral-900 hover:underline">Read case study →</a>
+          <a
+            href="/projects/case-studies/RailingEstimation.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6"/>
+            </svg>
+            PDF
+          </a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
       {/* KSA Alignment */}
       <section id="ksa" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
