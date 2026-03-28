@@ -1,3 +1,4 @@
+import { projects } from "./data/projects";
 export default function Page() {
   return (
     <main className="min-h-screen bg-white text-neutral-900">
@@ -7,6 +8,7 @@ export default function Page() {
           <a href="#home" className="font-semibold tracking-tight">
             Hussain Syed, P.Eng., PMP®
           </a>
+
           <nav className="hidden md:flex gap-6 text-sm">
             <a href="#about" className="hover:text-neutral-600">About</a>
             <a href="#projects" className="hover:text-neutral-600">Projects</a>
@@ -14,6 +16,7 @@ export default function Page() {
             <a href="#certs" className="hover:text-neutral-600">Certifications</a>
             <a href="#contact" className="hover:text-neutral-600">Contact</a>
           </nav>
+
           <a
             href="#contact"
             className="inline-flex items-center rounded-2xl border border-neutral-300 px-3 py-1.5 text-sm hover:bg-neutral-50"
@@ -28,19 +31,29 @@ export default function Page() {
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div>
             <h1 className="text-3xl md:text-5xl font-semibold leading-tight tracking-tight">
-              PMP® Project Manager & Process Engineer for High-Rise Facade Manufacturing
+              Continuous Improvement & Operational Excellence Leader in Facade Manufacturing
             </h1>
+
+            <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+              <span className="bg-neutral-900 text-white px-3 py-1 rounded-full">$2.5M+ Cost Savings</span>
+              <span className="bg-neutral-100 px-3 py-1 rounded-full">20% Efficiency Gain</span>
+              <span className="bg-neutral-100 px-3 py-1 rounded-full">30% Defect Reduction</span>
+              <span className="bg-neutral-100 px-3 py-1 rounded-full">40% Supplier Improvement</span>
+            </div>
+
             <p className="mt-4 text-neutral-600 text-base md:text-lg">
               I lead, standardize, and improve production systems for curtain walls,
               window walls, and railings — bridging design and shop-floor execution
               for first-time-right delivery.
             </p>
+
             <ul className="mt-6 flex flex-wrap gap-3 text-sm">
               <li className="rounded-full border border-neutral-300 px-3 py-1">P.Eng.</li>
               <li className="rounded-full border border-neutral-300 px-3 py-1">PMP®</li>
               <li className="rounded-full border border-neutral-300 px-3 py-1">ASQ Green Belt</li>
               <li className="rounded-full border border-neutral-300 px-3 py-1">ISO 9001:2015</li>
             </ul>
+
             <div className="mt-8 flex gap-3">
               <a
                 href="#projects"
@@ -73,12 +86,14 @@ export default function Page() {
           <div className="md:col-span-1">
             <h2 className="text-2xl font-semibold tracking-tight">About</h2>
           </div>
+
           <div className="md:col-span-2 text-neutral-700 leading-relaxed">
             <p>
               I’m a licensed Professional Engineer and <strong>PMP® certified project manager</strong>
               with 6+ years in facade manufacturing and installation. I lead cross-functional initiatives
               that reduce waste, improve throughput, and ensure ISO 9001:2015 compliance.
             </p>
+
             <p className="mt-4">
               I’m now focused on contributing to <strong>Saudi Arabia’s Vision 2030</strong> megaprojects,
               bringing Lean Six Sigma and structured problem-solving to large-scale builds across Riyadh,
@@ -87,108 +102,53 @@ export default function Page() {
           </div>
         </div>
       </section>
-/* Projects */
-<section id="projects" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
-  <h2 className="text-2xl font-semibold tracking-tight">Featured Projects</h2>
 
-  <div className="mt-6 grid md:grid-cols-3 gap-6">
-    {/* Glass */}
-    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-      <img
-        src="/projects/thumbnails/GlassReorder-thumb-branded.png"
-        alt="Glass Reorder Case Study preview"
-        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
-      />
-      <div className="p-5">
-        <h3 className="font-semibold">Glass Reorder Cost Reduction</h3>
-        <p className="mt-2 text-sm text-neutral-600">
-          Reduced annual glass reorder costs from <strong>$1.2M in 2023</strong> to <strong>$200k in 2024</strong>.
-        </p>
-        <div className="mt-3 flex items-center gap-4 text-sm">
-          <a href="#case-glass" className="text-neutral-900 hover:underline">Read case study →</a>
-          <a
-            href="/projects/case-studies/GlassReorder.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
-          >
-            {/* Small PDF icon inline */}
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <path d="M14 2v6h6"/>
-            </svg>
-            PDF
-          </a>
-        </div>
-      </div>
-    </article>
+      {/* Projects */}
+      <section id="projects" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
+        <h2 className="text-2xl font-semibold tracking-tight">Featured Projects</h2>
 
-    {/* Windows */}
-    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-      <img
-        src="/projects/thumbnails/WindowProduction-thumb-branded.png"
-        alt="Window Production Throughput case study preview"
-        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
-      />
-      <div className="p-5">
-        <h3 className="font-semibold">Window Production Throughput</h3>
-        <p className="mt-2 text-sm text-neutral-600">
-          Readiness gates removed backlogs and increased output to <strong>11,000/month</strong>.
-        </p>
-        <div className="mt-3 flex items-center gap-4 text-sm">
-          <a href="#case-windows" className="text-neutral-900 hover:underline">Read case study →</a>
-          <a
-            href="/projects/case-studies/WindowProduction.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <path d="M14 2v6h6"/>
-            </svg>
-            PDF
-          </a>
-        </div>
-      </div>
-    </article>
+        <div className="mt-6 grid md:grid-cols-3 gap-6">
+          {projects.map((project, index) => {
+            return (
+              <article
+                key={index}
+                className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition"
+              >
+                <img
+                  src={project.thumbnail}
+                  alt={project.title}
+                  className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
+                />
 
-    {/* Railing */}
-    <article className="rounded-2xl border border-neutral-200 overflow-hidden hover:shadow-sm transition">
-      <img
-        src="/projects/thumbnails/RailingEstimation-thumb-branded.png"
-        alt="Railing Estimation & Pricing case study preview"
-        className="aspect-[4/3] w-full object-cover transition-transform duration-300 hover:scale-[1.01]"
-      />
-      <div className="p-5">
-        <h3 className="font-semibold">Railing Estimation & Pricing</h3>
-        <p className="mt-2 text-sm text-neutral-600">
-          Time studies + material sheets → standardized, accurate, faster quotes.
-        </p>
-        <div className="mt-3 flex items-center gap-4 text-sm">
-          <a href="#case-estimation" className="text-neutral-900 hover:underline">Read case study →</a>
-          <a
-            href="/projects/case-studies/RailingEstimation.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-neutral-600 hover:text-neutral-900"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-              <path d="M14 2v6h6"/>
-            </svg>
-            PDF
-          </a>
+                <div className="p-5">
+                  <h3 className="font-semibold">{project.title}</h3>
+
+                  <p className="mt-2 text-sm text-neutral-600">
+                    {project.description}
+                  </p>
+
+                  <div className="mt-3">
+                    <a
+                      href={project.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-neutral-900 hover:underline text-sm"
+                    >
+                      View case study →
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
-      </div>
-    </article>
-  </div>
-</section>
+      </section>
 
       {/* KSA Alignment */}
       <section id="ksa" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <div className="rounded-3xl border border-neutral-200 p-6 md:p-8 bg-neutral-50">
           <h2 className="text-2xl font-semibold tracking-tight">Ready for Saudi Arabia’s Vision 2030</h2>
+
           <ul className="mt-4 list-disc pl-6 text-neutral-700 space-y-1 text-sm">
             <li>High-rise facade systems (curtain walls, window walls, railings).</li>
             <li>Bridging manufacturing and site execution with strong leadership.</li>
@@ -201,6 +161,7 @@ export default function Page() {
       {/* Certifications */}
       <section id="certs" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <h2 className="text-2xl font-semibold tracking-tight">Certifications & Skills</h2>
+
         <div className="mt-6 grid md:grid-cols-2 gap-6">
           <div className="rounded-2xl border border-neutral-200 p-5">
             <h3 className="font-semibold">Certifications</h3>
@@ -211,6 +172,7 @@ export default function Page() {
               <li>ISO 9001:2015 Internal Auditor</li>
             </ul>
           </div>
+
           <div className="rounded-2xl border border-neutral-200 p-5">
             <h3 className="font-semibold">Core Skills</h3>
             <ul className="mt-3 list-disc pl-5 text-neutral-700 text-sm space-y-1">
@@ -227,9 +189,11 @@ export default function Page() {
       <section id="contact" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <div className="rounded-3xl border border-neutral-200 p-6 md:p-8 bg-neutral-50">
           <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
+
           <p className="mt-2 text-neutral-700">
-            Open to roles across Saudi Arabia: <strong>Project Manager, Process Engineer, or QA/QC Lead</strong>.
+            Open to roles across Saudi Arabia: <strong>CI Manager | Operational Excellence Manager | QA/QC Manager</strong>.
           </p>
+
           <div className="mt-6 grid sm:grid-cols-3 gap-4 text-sm">
             <a
               href="mailto:syedhussain6016@gmail.com"
@@ -237,13 +201,16 @@ export default function Page() {
             >
               syedhussain6016@gmail.com
             </a>
+
             <a
               href="https://www.linkedin.com/in/syed-hussain-quadri-/"
               className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
+
             <a
               href="/HussainSyed_PEng_PMP_2025.pdf"
               className="rounded-2xl border border-neutral-300 px-4 py-3 bg-white hover:bg-neutral-50"
