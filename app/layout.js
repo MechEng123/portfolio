@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Hussain Syed | P.Eng., PMP® Portfolio",
+  title: "Hussain Syed | CI & Operation Excellence Leader |P.Eng., PMP® ",
   description: "PMP® Project Manager & Process Engineer for High‑Rise Facade Manufacturing – KSA ready.",
 };
 

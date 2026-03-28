@@ -27,58 +27,73 @@ export default function Page() {
       </header>
 
       {/* Hero */}
-      <section id="home" className="mx-auto max-w-6xl px-4 pt-14 pb-12 md:pt-20 md:pb-16">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div>
-            <h1 className="text-3xl md:text-5xl font-semibold leading-tight tracking-tight">
-              Continuous Improvement & Operational Excellence Leader in Facade Manufacturing
-            </h1>
+    <section id="home" className="mx-auto max-w-6xl px-4 pt-14 pb-12 md:pt-20 md:pb-16">
+  <div className="grid md:grid-cols-2 gap-10 items-center">
+    <div className="flex flex-col items-start">
+    <div className="flex items-center gap-4 mb-4">
+  <img
+    src="/headshot.jpg"
+    alt="Hussain Syed"
+    className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover border border-neutral-200 shadow-sm"
+  />
 
-            <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
-              <span className="bg-neutral-900 text-white px-3 py-1 rounded-full">$2.5M+ Cost Savings</span>
-              <span className="bg-neutral-100 px-3 py-1 rounded-full">20% Efficiency Gain</span>
-              <span className="bg-neutral-100 px-3 py-1 rounded-full">30% Defect Reduction</span>
-              <span className="bg-neutral-100 px-3 py-1 rounded-full">40% Supplier Improvement</span>
-            </div>
+  <div>
+    <h2 className="text-lg font-semibold">Hussain Syed, P.Eng., PMP®</h2>
+    <p className="text-sm text-neutral-600">
+      Continuous Improvement & Operational Excellence Leader
+    </p>
+  </div>
+</div>
 
-            <p className="mt-4 text-neutral-600 text-base md:text-lg">
-              I lead, standardize, and improve production systems for curtain walls,
-              window walls, and railings — bridging design and shop-floor execution
-              for first-time-right delivery.
-            </p>
+<h1 className="text-3xl md:text-5xl font-semibold leading-tight tracking-tight">
+  Driving Cost Savings, Quality Improvement, and Operational Excellence in Facade Manufacturing
+</h1>
 
-            <ul className="mt-6 flex flex-wrap gap-3 text-sm">
-              <li className="rounded-full border border-neutral-300 px-3 py-1">P.Eng.</li>
-              <li className="rounded-full border border-neutral-300 px-3 py-1">PMP®</li>
-              <li className="rounded-full border border-neutral-300 px-3 py-1">ASQ Green Belt</li>
-              <li className="rounded-full border border-neutral-300 px-3 py-1">ISO 9001:2015</li>
-            </ul>
+      <div className="mt-6 flex flex-wrap gap-3 text-sm font-semibold">
+        <span className="bg-neutral-900 text-white px-3 py-1 rounded-full">$2.5M+ Cost Savings</span>
+        <span className="bg-neutral-100 px-3 py-1 rounded-full">20% Efficiency Gain</span>
+        <span className="bg-neutral-100 px-3 py-1 rounded-full">30% Defect Reduction</span>
+        <span className="bg-neutral-100 px-3 py-1 rounded-full">40% Supplier Improvement</span>
+      </div>
 
-            <div className="mt-8 flex gap-3">
-              <a
-                href="#projects"
-                className="rounded-2xl bg-neutral-900 text-white px-4 py-2 hover:bg-neutral-800"
-              >
-                View projects
-              </a>
-              <a
-                href="/HussainSyed_PEng_PMP_2025.pdf"
-                className="rounded-2xl border border-neutral-300 px-4 py-2 hover:bg-neutral-50"
-              >
-                Download CV
-              </a>
-            </div>
-          </div>
+      <p className="mt-4 text-neutral-600 text-base md:text-lg">
+        I lead, standardize, and improve production systems for curtain walls,
+        window walls, and railings — bridging design and shop-floor execution
+        for first-time-right delivery.
+      </p>
 
-          <div className="relative">
-            <img
-              src="/hero_training_session.jpg"
-              alt="Hussain Syed leading a training session"
-              className="w-full rounded-3xl border border-neutral-200 object-cover"
-            />
-          </div>
-        </div>
-      </section>
+      <ul className="mt-6 flex flex-wrap gap-3 text-sm">
+        <li className="rounded-full border border-neutral-300 px-3 py-1">P.Eng.</li>
+        <li className="rounded-full border border-neutral-300 px-3 py-1">PMP®</li>
+        <li className="rounded-full border border-neutral-300 px-3 py-1">ASQ Green Belt</li>
+        <li className="rounded-full border border-neutral-300 px-3 py-1">ISO 9001:2015</li>
+      </ul>
+
+      <div className="mt-8 flex gap-3">
+        <a
+          href="#projects"
+          className="rounded-2xl bg-neutral-900 text-white px-4 py-2 hover:bg-neutral-800"
+        >
+          View projects
+        </a>
+        <a
+          href="/HussainSyed_PEng_PMP_2025.pdf"
+          className="rounded-2xl border border-neutral-300 px-4 py-2 hover:bg-neutral-50"
+        >
+          Download CV
+        </a>
+      </div>
+    </div>
+
+    <div className="relative">
+      <img
+        src="/hero_training_session.jpg"
+        alt="Hussain Syed leading a training session"
+        className="w-full rounded-3xl border border-neutral-200 object-cover"
+      />
+    </div>
+  </div>
+</section>
 
       {/* About */}
       <section id="about" className="mx-auto max-w-6xl px-4 py-12 md:py-16">
