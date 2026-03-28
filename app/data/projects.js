@@ -1,7 +1,7 @@
 export const projects = [
       {
     title: "Glass Reorder Cost Reduction",
-    description: "From $1.2M → $200K annual savings",
+    description: "From $1.2M → $300K annual savings(~75% reduction)",
     thumbnail: "/projects/thumbnails/glass-reorder-cost.png",
     pdf: "/projects/case-studies/glass-reorder-cost.pdf",
   },
